@@ -488,86 +488,85 @@
         </button>
         <p class="modal_title">Leave your contacts and we will call you back</p>
         <form class="modal_form">
-          <div class="modal_form-field mb8px">
-            <label class="form-field_name modal_form-label" for="name"
+          <div class="modal_form-field">
+            <label class="modal_form-label" for="user-name"
               ><span>Name</span></label
             >
             <div class="modal_field-wrap">
               <input
-                class="modal_input-name modal_form-input"
-                name="name"
-                id="name"
+                class="modal_form-input"
+                name="user-name"
+                id="user-name"
                 type="text"
               />
-              <svg class="form-field_name-svg" width="18" height="24">
+              <svg class="form-field-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div class="modal_form-field mb8px">
-            <label class="form-field_phone modal_form-label" for="phone">
+          <div class="modal_form-field">
+            <label class="modal_form-label" for="phone">
               <span>Phone</span>
             </label>
             <div class="modal_field-wrap">
               <input
-                class="modal_input-phone modal_form-input"
+                class="modal_form-input"
                 name="phone"
                 type="tel"
                 id="phone"
               />
-              <svg class="form-field_phone-svg" width="18" height="24">
+              <svg class="form-field-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="modal_form-field mb8px">
-            <label class="form-field_email modal_form-label" for="email">
+          <div class="modal_form-field">
+            <label class="modal_form-label" for="email">
               <span>Email</span>
             </label>
             <div class="modal_field-wrap">
               <input
-                class="modal_input-email modal_form-input"
+                class="modal_form-input"
                 name="email"
                 type="email"
                 id="email"
               />
-              <svg class="form-field_email-svg" width="18" height="24">
+              <svg class="form-field-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="modal_form-field">
-            <label class="form-field_comment modal_form-label" for="comment">
+          <div class="modal_form-field modal_form-field--mgbt">
+            <label
+              class="form-field_comment modal_form-label"
+              for="user-comment"
+            >
               <span>Comment</span>
             </label>
-            <div class="modal_field-wrap">
-              <textarea
-                class="modal_comment"
-                name="comment"
-                id="comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <textarea
+              class="modal_comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
-          <div class="modal_field-wrap">
+          <div class="modal_field-wrap--checkbox">
             <input
-              class="modal_checkbox"
-              id="policy"
+              class="modal_checkbox visually-hidden"
+              id="user-privacy"
               type="checkbox"
-              name="policy"
+              name="user-privacy"
               value="true"
               required
             />
-            <label class="modal_policy" for="policy"
+            <label class="modal_policy" for="user-privacy"
               ><span class="check-box">
                 <svg class="policy-svg" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span class="policy-text">
-                I accept the terms and conditions of the
-                <a class="policy-link link" href="#">Privacy Policy</a>
-              </span>
+              I accept the terms and conditions of the
+              <a class="policy-link link" href="#">Privacy Policy</a>
             </label>
           </div>
           <button class="modal-btn" type="submit">Send</button>
